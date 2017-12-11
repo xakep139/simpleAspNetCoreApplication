@@ -53,7 +53,6 @@ namespace WebApplication
         {
             loggerFactory.AddConsole(_configuration.GetSection("Logging"));
             app.UseMvc();
-            app.UseApiVersioning();
             app.UseSwagger();
             app.UseSwaggerUI(
                 options =>
